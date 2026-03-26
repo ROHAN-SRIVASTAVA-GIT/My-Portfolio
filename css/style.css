@@ -650,6 +650,26 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Orbitron', sans-serif; font-weight: 700; 
 .project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
 .project-tech span { background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-light); }
 
+.project-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(11, 206, 175, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid var(--primary);
+}
+.project-stats span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+.project-stats span i { font-size: 0.9rem; }
+
 .project-links-row { display: flex; gap: 15px; flex-wrap: wrap; }
 .project-link-btn {
     display: inline-flex;
