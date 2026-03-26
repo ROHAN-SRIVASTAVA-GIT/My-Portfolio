@@ -1,13 +1,28 @@
 {
   "version": 2,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/api/(.*)",
-      "destination": "/server.js"
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["index.html", "css/**", "js/**", "lib/**", "img/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/server.js",
+      "methods": ["POST"]
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/api/health",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
     }
   ]
 }

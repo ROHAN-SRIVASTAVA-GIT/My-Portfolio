@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Backend server for portfolio contact form",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo 'No build needed'"
   },
   "dependencies": {
     "cors": "^2.8.5",
