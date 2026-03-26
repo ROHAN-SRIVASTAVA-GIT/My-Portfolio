@@ -7,13 +7,11 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
 
-const OWNER_NAME = 'Rohan Srivastava';
+const OWNER_NAME = process.env.OWNER_NAME || 'Rohan Srivastava';
 const OWNER_EMAIL = process.env.OAUTH_EMAIL || process.env.EMAIL_USER || 'srivastavarohan3125@gmail.com';
 
 let transporter = null;
@@ -61,7 +59,7 @@ if (process.env.OAUTH_CLIENT_ID && process.env.OAUTH_CLIENT_SECRET && process.en
         .then(() => { console.log('SMTP connection verified'); })
         .catch((err) => { console.log('SMTP verification failed:', err.message); });
 } else {
-    console.log('Email credentials not configured. Please set up .env file.');
+    console.log('Email credentials not configured. Please set up environment variables.');
 }
 
 async function sendEmailViaGmailApi(to, subject, htmlContent) {
@@ -280,10 +278,17 @@ app.post('/api/contact', async (req, res) => {
     }
 });
 
+app.get('/api/health', (req, res) => {
+    res.json({ 
+        status: 'OK',
+        emailConfigured: useGmailApi || !!transporter
+    });
+});
+
+app.use(express.static(path.join(__dirname)));
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log('Server running on http://localhost:' + PORT);
-});
+module.exports = app;
