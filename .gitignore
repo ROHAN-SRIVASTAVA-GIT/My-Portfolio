@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment variables - KEEP THIS FILE TRACKED
+# .env
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp

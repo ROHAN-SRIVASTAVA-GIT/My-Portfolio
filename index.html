@@ -3,35 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PORTFOLIO-ROHAN SRIVASTAVA</title>
+    <title>Rohan Srivastava | Software Engineer</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Software Engineer, Full-Stack Developer, Backend Developer, Java Spring Boot, React.js, Deloitte, Oracle Certified" name="keywords">
+    <meta content="Professional portfolio of Rohan Srivastava - Software Engineer at Centroxy Solutions, deputed to Deloitte as SDA. Specializing in Full-Stack & Backend Development." name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.jfif" rel="icon">
+    <link href="img/bgfavi.png" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="mailto: srivastavarohan3125@gmail.com" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Email</span>Me</h1>
+    <div id="particles-container"></div>
+
+    <nav class="navbar fixed-top shadow-lg navbar-expand-lg navbar-dark py-3 py-lg-0 px-lg-5" id="mainNav">
+        <a href="#home" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-gradient">RS</span></h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -40,610 +37,752 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <!--<a href="#service" class="nav-item nav-link">Service</a>-->
-                <a href="#portfolio" class="nav-item nav-link">Projects</a>
-                <!--<a href="#testimonial" class="nav-item nav-link">Review</a>-->
+                <a href="#skills" class="nav-item nav-link">Skills</a>
+                <a href="#experience" class="nav-item nav-link">Experience</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/rohan3125/"><i class="fab fa-linkedin-in"></i></a>
-            <!-- <a href="https://www.linkedin.com/in/rohan3125/" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">LinkedIn</a> -->
+            <div class="social-links d-flex">
+                <a class="btn btn-outline-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-social mr-2" href="https://www.linkedin.com/in/rohan3125/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social" href="https://leetcode.com/codethecoding25/" target="_blank"><i class="fas fa-code"></i></a>
+            </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hello, my name</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">Rohan Srivastava</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/1va3iZx7J38OF_39MyEzh4I_mJp2nJaWx/view?usp=share_link" target="_blank" class="btn btn-white mr-4">Download Resume</a>
-
-                        <a href="" class="btn btn-blue d-none d-sm-block">Play Video</a>
+    <section class="hero-section" id="home">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-lg-7 text-center text-lg-left hero-content">
+                    <div class="hero-text">
+                        <p class="greeting-text">Hello, I'm</p>
+                        <h1 class="hero-name">Rohan Srivastava</h1>
+                        <h2 class="hero-title">
+                            <span class="typed-text-output"></span>
+                        </h2>
+                        <div class="typed-strings d-none">Software Engineer, Full-Stack Developer, Backend Developer</div>
+                        <p class="hero-description">
+                            Software Engineer specializing in Full-Stack & Backend Development. Deputed to Deloitte as SDA at
+                            Centroxy Solutions, delivering enterprise solutions across React.js, Spring Boot, FastAPI, and PostgreSQL.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="4">0</span>
+                                <span class="stat-label">Enterprise Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="6">0</span>
+                                <span class="stat-label">+ Performance Gains</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="1">0</span>
+                                <span class="stat-label">Oracle Certified</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg mr-3">
+                                <i class="fas fa-envelope mr-2"></i>Contact Me
+                            </a>
+                            <a href="https://drive.google.com/file/d/1va3iZx7J38OF_39MyEzh4I_mJp2nJaWx/view" target="_blank" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-download mr-2"></i>Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
-                    <img class="img-fluid w-60 rounded-circle shadow-sm" src="img/bgfavi.png" alt="">
+                <div class="col-lg-5 text-center hero-image-section">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-border"></div>
+                        <div class="hero-image-border border-2"></div>
+                        <img src="img/bgfavi.png" alt="Rohan Srivastava" class="hero-image">
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" style="--delay: 0s; --x: 100px; --y: -50px;">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 0.5s; --x: -80px; --y: 30px;">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s; --x: 60px; --y: 80px;">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1.5s; --x: -100px; --y: -80px;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/GIFabout.gif" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Web Developer & App Developer </h3>
-                    <p>Currently pursuing a UG course in BTech- CSE, I am seeking a challenging position in a reputable organization to expand and utilize my learning, skills, and knowledge. Possess excellent communication skills and has an eye for detail.
-                        Flexible to work in any environment of as required.
-                    </p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2">
-                            <h6>Name: <span class="text-secondary">Rohan Srivastava</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Birthday: <span class="text-secondary">December 25th,2000</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Degree: <span class="text-secondary">B Tech CSE</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Experience: <span class="text-secondary">02 Years</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Phone: <span class="text-secondary">+91 7903994736</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Email: <span class="text-secondary">srivastavarohan3125@gmail.com.com</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Address: <span class="text-secondary">Jamshedpur Jharkhand, 831009</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Freelance: <span class="text-secondary">Available</span></h6>
-                        </div>
-                    </div>
-                    <a href="https://www.linkedin.com/in/rohan3125/" target="_blank" class="btn blue btn-outline-primary mr-4">LinkedIn</a>
-                    <a href="https://leetcode.com/codethecoding25/" class="btn btn-outline-primary">LeetCode</a>
-                </div>
-            </div>
+            <span>Scroll Down</span>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
 
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
+    <section class="about-section" id="about">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            <div class="section-header text-center">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">95%</h6>
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="img/GIFabout.gif" alt="About Rohan" class="img-fluid">
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHP</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Android Studio</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="experience-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">2+</span>
+                                <span class="badge-text">Years<br>Experience</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">DSA</h6>
-                            <h6 class="font-weight-bold">65%</h6>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <h3 class="about-heading">Software Engineer</h3>
+                        <p class="about-text">
+                            Software Engineer at Centroxy Solutions, deputed to Deloitte as SDA, with expertise in Full-Stack & Backend Development.
+                            Delivered 4+ enterprise full-stack features, cutting feature cycle time by 30% across concurrent project tracks.
+                        </p>
+                        <p class="about-text">
+                            Specialized in React.js, Spring Boot, FastAPI, and PostgreSQL. Engineered React.js + Redux UI components,
+                            boosting page load speed by 25% and cutting re-render cycles by 40%. Slashed PostgreSQL query execution time by 40%.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Education</h4>
+                                    <p>B.Tech in CSE<br>XIM University, Bhubaneswar | 2024</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Current Role</h4>
+                                    <p>Software Engineer<br>Centroxy Solutions | Deloitte SDA (Jun 2024 - Present)</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Location</h4>
+                                    <p>Bhubaneswar, India</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Javascript</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Node js / React</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="about-buttons">
+                            <a href="https://www.linkedin.com/in/rohan3125/" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                            </a>
+                            <a href="https://leetcode.com/codethecoding25/" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-code mr-2"></i>LeetCode
+                            </a>
+                            <a href="https://github.com/ROHAN-SRIVASTAVA-GIT" target="_blank" class="btn btn-outline-primary">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Skill End -->
+    </section>
 
-
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <section class="skills-section" id="skills">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor of Technology (B .Tech .CSE)</h5>
-                            <p class="mb-2"><strong>XIM University Bhubaneshwar</strong> | <small>2020 - 2024</small></p>
-                            <p>Currently pursuing a UG course in BTech- CSE. I am a Pre-Final Year Student. Score - 8.10 CGPA</p>
-                        </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Intermediate</h5>
-                            <p class="mb-2"><strong>Vidya Bharati Chinmaya Vidyalaya </strong> | <small>2018 - 2020</small></p>
-                            <p>Score - 85.20 %</p>
-                        </div>
-                        <!---- <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">IIT Kharagpur</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2011 - 2015</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Internship - Machine learning </h5>
-                            <p class="mb-2"><strong>Internship Studio (NEO 5.0)</strong> | <small> 4 Weeks </small></p>
-                            <p>Completed 5 weeks of internship in Machine Learning with the title of “YouTube adview prediction" at Internship Studio from 11th January to 15th February 2022.</p>
-                        </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Internship - App Development</h5>
-                            <p class="mb-2"><strong>Ineuron</strong> | <small> 1 Year</small></p>
-                            <p>Instagram DP and Stories Downloader</p>
-                        </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Internship - Web Development</h5>
-                            <p class="mb-2"><strong>CodeClause</strong> | <small> 4 Weeks</small></p>
-                            <p>File Conversion web application</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-
-    <!-- Services Start -->
-    <!-- <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Design</h4>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quibusdam fugiat iste molestiae neque ipsum explicabo? Voluptates soluta iure, cum quasi perferendis, quo pariatur cupiditate optio neque dolorem laborum praesentium?</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Development</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Design</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Development</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem Amet lorem lorem</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SEO</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="service-box col-lg-4  col-md-7 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Content Creating</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+            <div class="section-header text-center">
+                <span class="section-subtitle">Technical Expertise</span>
+                <h2 class="section-title">Skills</h2>
+                <div class="section-line"></div>
             </div>
             <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 " data-filter=".first">Android Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Web Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Internship Projects</li>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Java (SE 17)</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Python, C++, PHP</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>React.js (Redux)</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Angular</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>HTML5, CSS3, Bootstrap</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend & APIs</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Spring Boot</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Node.js, Express.js, FastAPI</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>REST APIs, Microservices</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Databases & Cloud</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>PostgreSQL, MySQL, Oracle</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>MongoDB, Aerospike</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>AWS, OpenShift, Docker, Jenkins</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="skills-chart-container" data-aos="fade-up">
+                        <h3 class="chart-title text-center mb-4">Skills Distribution</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="skillsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack mt-5">
+                <h3 class="text-center mb-4">Technologies</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="0">
+                        <i class="fab fa-java"></i>
+                        <span>Java SE 17</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
+                        <i class="fas fa-leaf"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+                        <i class="fas fa-database"></i>
+                        <span>Oracle</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-leaf"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="450">
+                        <i class="fab fa-jenkins"></i>
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="500">
+                        <i class="fas fa-server"></i>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="550">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Microservices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span class="date-badge">Jun 2024 - Present</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="timeline-tag work">Current Role</div>
+                        <h3>Software Engineer | Deloitte SDA</h3>
+                        <h4>Centroxy Solutions Pvt Ltd | Bhubaneswar</h4>
+                        <p class="timeline-description">
+                            Delivered 4+ enterprise full-stack features, cutting feature cycle time by 30% across concurrent project tracks.
+                            Spearheaded REST API design serving 10,000+ daily transactions. Engineered React.js + Redux UI components,
+                            boosting page load speed by 25%. Streamlined Jenkins CI/CD pipelines, reducing release cycle time by 20%.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>React.js</span>
+                            <span>Spring Boot</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Jenkins</span>
+                            <span>OpenShift</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2020 - 2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-tag education">Education</div>
+                        <h3>B.Tech in Computer Science & Engineering</h3>
+                        <h4>XIM University, Bhubaneswar, India</h4>
+                        <p class="timeline-description">
+                            Completed undergraduate studies in Computer Science and Engineering. Built strong foundation in
+                            programming, data structures, algorithms, and software development principles.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row projects-grid">
+                <div class="col-lg-6 col-md-6 project-item" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-category">Backend</div>
+                            <h3 class="project-title">Airtel-Vodafone UK Telecom Self-Care Portal</h3>
+                            <p class="project-description">
+                                Developed microservices for user profile & plan management handling 500K+ active sessions in production.
+                                Integrated Aerospike caching, reducing API latency by 35% and offloading 60% of repeated DB reads.
+                                Configured Jenkins pipelines and OpenShift YAML manifests enabling zero-downtime releases across 4 environments.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java 11</span>
+                                <span>Spring Boot</span>
+                                <span>Microservices</span>
+                                <span>Oracle</span>
+                                <span>Aerospike</span>
+                                <span>OpenShift</span>
+                                <span>Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-category">Full Stack</div>
+                            <h3 class="project-title">SMRD Tata Power Billing System</h3>
+                            <p class="project-description">
+                                Architected billing engine across 5+ tariff tiers, eliminating manual reconciliation for 10,000+ smart meters.
+                                Optimized PostgreSQL schemas, cutting report generation time by 45% while supporting 3x data volume growth.
+                                Crafted Angular dashboards for real-time meter visualization, reducing data-entry errors by 70%.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>Angular</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                                <span>Sentry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-category">IoT</div>
+                            <h3 class="project-title">Nirapad Udaan - IoT Road Safety Drone</h3>
+                            <p class="project-description">
+                                Drone surveillance system across 12 road corridors. Cut manual patrol dependency by 60% via autonomous
+                                GIS-triggered alerts. Integrated IoT sensors and GIS mapping for real-time road safety monitoring.
+                            </p>
+                            <div class="project-tech">
+                                <span>IoT</span>
+                                <span>GIS</span>
+                                <span>Embedded Systems</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-category">Machine Learning</div>
+                            <h3 class="project-title">AI Facial Recommendation Engine</h3>
+                            <p class="project-description">
+                                ML model on 10,000+ samples reaching 87% relevance for facial recognition and recommendations.
+                                Built using Python, ML, Computer Vision, and Flask. 3rd Place winner at GEEK-O-THON 2023 (IIIT Bhubaneswar, 100+ teams).
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>Computer Vision</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements-section" id="achievements">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Oracle Certified Java SE 17 Developer</h3>
+                        <p>Oracle Certified Professional Java SE 17 Developer (1Z0-829). Validates advanced Java programming skills and best practices.</p>
+                        <span class="cert-id">Cert ID: 1Z0-829</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>3rd Place - GEEK-O-THON 2023</h3>
+                        <p>Won 3rd place at GEEK-O-THON 2023 at IIIT Bhubaneswar among 100+ teams. Built AI Facial Recommendation Engine with 87% relevance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases & SQL for Data Science</h3>
+                        <p>Pearson Certified - Databases & SQL for Data Science. Oracle Authorized (ULSA).</p>
+                        <span class="cert-id">Cert ID: 9SB69PLIF0FX</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3>AWS Cloud Practitioner Essentials</h3>
+                        <p>IBM Amazon Web Services AWS Cloud Practitioner Essentials certification. Self-taught Spring Boot, AWS & Angular within 6 months on the job.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out for any collaboration, project opportunities, or just to say hello.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Name</h4>
+                                    <p>Rohan Srivastava</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Location</h4>
+                                    <p>Bhubaneswar, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Email</h4>
+                                    <p>srivastavarohan3125@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Phone</h4>
+                                    <p>+91 7903994736</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://github.com/ROHAN-SRIVASTAVA-GIT" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rohan3125/" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://leetcode.com/codethecoding25/" target="_blank" class="social-icon">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="https://www.hackerrank.com/srivastava_rohan" target="_blank" class="social-icon">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        <div id="formStatus" class="mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2 class="footer-logo"><span class="text-gradient">RS</span></h2>
+                    <p>Software Engineer | Full-Stack & Backend Development</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class=" portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <div class="border-left border-primary pt-2 pl-4 ml-2">
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Academic Information System (AIS)</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT/Academic-Information-System-" target="_blank"><i class="fab fa-android"></i></a></strong> | <small>2022-Present</small></p>
-                                <p>Academic Information System is software which is used to present and organize information related to the administration of academic activities. With the use of software, academic administration activities is expected to
-                                    be managed properly and the required information can be obtained easily and quickly.</p>
-                            </div>
-
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Music Player</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-android"></i></a></strong> | <small>2022 - Present</small></p>
-                                <p>Music Player</p>
-                            </div>
-
-                        </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> srivastavarohan3125@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91-7903994736</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bhubaneswar, India</li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/ROHAN-SRIVASTAVA-GIT" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rohan3125/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/codethecoding25/" target="_blank"><i class="fas fa-code"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row portfolio-container">
-                <div class=" portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <div class="border-left border-primary pt-2 pl-4 ml-2">
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Blood Bank Management System</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT/BLOOD-BANK-MANAGEMENT" target="_blank"><i class="fab fa-html5"></i></a></strong> | <small>2022-Present</small></p>
-                                <p>Blood Bank Management System (BBMS) is a browser based system that is designed to store, process, retrieve and analyze information concerned with the administrative and inventory management within a blood bank. This project
-                                    aims at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way. Aim is to provide transparency in this field, make the process
-                                    of obtaining blood from a blood bank hassle free and corruption free and make the system of blood bank management effective.</p>
-                            </div>
-
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Ola Website Clone</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT/" target="_blank"><i class="fab fa-html5"></i></a></strong> | <small>2022 - Present</small></p>
-                                <p>Ola Website clone</p>
-                            </div>
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">My Portfolio</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT/My-Portfolio" target="_blank"><i class="fab fa-html5"></i></a></strong> | <small>2022 - Present</small></p>
-                                <p>About Me - Professional Portfolio</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class=" portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <div class="border-left border-primary pt-2 pl-4 ml-2">
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Machine Learning</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT/Youtube-Adview-Prediction-master" target="_blank"><i class="fab fa-html5"></i></a></strong> | <small>2022-Present</small></p>
-                                <p>Youtube AdView Prediction.</p>
-                            </div>
-
-                            <div class="position-relative ex-me mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                                <h5 class="font-weight-bold mb-1">Pan Card Tampering</h5>
-                                <p class="mb-2"><strong><a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-python"></i></a></strong> | <small>2022 - Present</small></p>
-                                <p>Pan Card Tampering</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!---- <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">IIT Kharagpur</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2011 - 2015</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rohan Srivastava. All Rights Reserved.</p>
             </div>
         </div>
-    </div>-->
-            <!-- Portfolio End -->
+    </footer>
 
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-            <!-- Testimonial Start -->
-            <!--<div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-            <!-- Testimonial End -->
-
-
-
-            <!-- Contact Start -->
-            <div class="container-fluid py-5" id="contact">
-                <div class="container">
-                    <div class="position-relative d-flex align-items-center justify-content-center">
-                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                        <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="contact-form text-center">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="form-row">
-                                        <div class="control-group col-sm-6">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="control-group col-sm-6">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Contact End -->
-
-
-            <!-- Footer Start -->
-            <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
-                <div class="container text-center py-5">
-                    <div class="d-flex justify-content-center mb-4">
-                        <a class="btn btn-light btn-social mr-2" href="https://github.com/ROHAN-SRIVASTAVA-GIT" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-light btn-social mr-2" href="https://twitter.com/ias_politician" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/rohan3125/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-light btn-social" href="https://www.instagram.com/rebel_politician/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="d-flex justify-content-center mb-3">
-                        <a class="text-white" href="#">Privacy</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">Terms</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">FAQs</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">Help</a>
-                    </div>
-                    <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Rohan &copy 2023</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Rohan Srivastava</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Footer End -->
-
-            <!-- Scroll to Bottom -->
-            <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-            <!-- Back to Top -->
-            <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-            <!-- JavaScript Libraries -->
-            <!-- JavaScript Libraries -->
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-            <script src="lib/typed/typed.min.js"></script>
-            <script src="lib/easing/easing.min.js"></script>
-            <script src="lib/waypoints/waypoints.min.js"></script>
-            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-            <script src="lib/isotope/isotope.pkgd.min.js"></script>
-            <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-            <!-- Contact Javascript File -->
-            <script src="mail/jqBootstrapValidation.min.js"></script>
-            <script src="mail/contact.js"></script>
-
-            <!-- Template Javascript -->
-            <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
