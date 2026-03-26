@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
+const { google } = require('googleapis');
+const MailComposer = require('nodemailer/lib/mail-composer');
 const cors = require('cors');
 const path = require('path');
 
@@ -12,11 +14,32 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
 const OWNER_NAME = 'Rohan Srivastava';
-const OWNER_EMAIL = 'srivastavarohan3125@gmail.com';
+const OWNER_EMAIL = process.env.OAUTH_EMAIL || process.env.EMAIL_USER || 'srivastavarohan3125@gmail.com';
 
 let transporter = null;
+let useGmailApi = false;
+let gmail = null;
 
-if (process.env.EMAIL_USER && process.env.EMAIL_PASSWORD) {
+if (process.env.OAUTH_CLIENT_ID && process.env.OAUTH_CLIENT_SECRET && process.env.OAUTH_REFRESH_TOKEN) {
+    console.log('Using Gmail API (OAuth2) for email...');
+    
+    const oauth2Client = new google.auth.OAuth2(
+        process.env.OAUTH_CLIENT_ID,
+        process.env.OAUTH_CLIENT_SECRET,
+        'https://developers.google.com/oauthplayground'
+    );
+    
+    oauth2Client.setCredentials({
+        refresh_token: process.env.OAUTH_REFRESH_TOKEN
+    });
+    
+    gmail = google.gmail({ version: 'v1', auth: oauth2Client });
+    useGmailApi = true;
+    console.log('Gmail API (OAuth2) configured successfully');
+    
+} else if (process.env.EMAIL_USER && process.env.EMAIL_PASSWORD) {
+    console.log('Using Gmail SMTP for email...');
+    
     transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST || 'smtp.gmail.com',
         port: parseInt(process.env.EMAIL_PORT) || 587,
@@ -38,7 +61,68 @@ if (process.env.EMAIL_USER && process.env.EMAIL_PASSWORD) {
         .then(() => { console.log('SMTP connection verified'); })
         .catch((err) => { console.log('SMTP verification failed:', err.message); });
 } else {
-    console.log('Email credentials not configured.');
+    console.log('Email credentials not configured. Please set up .env file.');
+}
+
+async function sendEmailViaGmailApi(to, subject, htmlContent) {
+    try {
+        const mailOptions = {
+            from: `${OWNER_NAME} <${process.env.OAUTH_EMAIL}>`,
+            to: to,
+            subject: subject,
+            html: htmlContent,
+            textEncoding: 'base64'
+        };
+
+        const mail = new MailComposer(mailOptions);
+        const message = await mail.compile().build();
+        const rawMessage = Buffer.from(message)
+            .toString('base64')
+            .replace(/\+/g, '-')
+            .replace(/\//g, '_')
+            .replace(/=+$/, '');
+
+        const result = await gmail.users.messages.send({
+            userId: 'me',
+            requestBody: {
+                raw: rawMessage
+            }
+        });
+
+        console.log('Email sent via Gmail API! Message ID:', result.data.id);
+        return true;
+    } catch (error) {
+        console.error('Gmail API Error:', error.message);
+        throw error;
+    }
+}
+
+async function sendEmailViaSMTP(to, subject, htmlContent) {
+    try {
+        const mailOptions = {
+            from: `"${OWNER_NAME}" <${process.env.EMAIL_USER}>`,
+            to: to,
+            subject: subject,
+            html: htmlContent
+        };
+
+        const info = await transporter.sendMail(mailOptions);
+        console.log('Email sent via SMTP! MessageId:', info.messageId);
+        return true;
+    } catch (error) {
+        console.error('SMTP Error:', error.message);
+        throw error;
+    }
+}
+
+async function sendEmail(to, subject, htmlContent) {
+    if (useGmailApi) {
+        return await sendEmailViaGmailApi(to, subject, htmlContent);
+    } else if (transporter) {
+        return await sendEmailViaSMTP(to, subject, htmlContent);
+    } else {
+        throw new Error('Email service not configured');
+    }
 }
 
 const ownerEmailTemplate = (name, email, subject, message) => {
@@ -77,7 +161,7 @@ const ownerEmailTemplate = (name, email, subject, message) => {
             </div>
         </div>
         <div class="footer">
-            <p>Sent from Rohan Srivastava Portfolio | srivastavarohan3125@gmail.com</p>
+            <p>Sent from ${OWNER_NAME} Portfolio</p>
         </div>
     </div>
 </body>
@@ -162,7 +246,7 @@ app.post('/api/contact', async (req, res) => {
             });
         }
 
-        if (!transporter) {
+        if (!useGmailApi && !transporter) {
             return res.status(500).json({ 
                 success: false,
                 error: 'Email service not configured. Contact directly at ' + OWNER_EMAIL 
@@ -170,22 +254,17 @@ app.post('/api/contact', async (req, res) => {
         }
 
         const ownerMailOptions = {
-            from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-            to: OWNER_EMAIL,
-            replyTo: email,
             subject: `Portfolio Contact: ${subject}`,
             html: ownerEmailTemplate(name, email, subject, message)
         };
 
         const userMailOptions = {
-            from: `"Rohan Srivastava" <${process.env.EMAIL_USER}>`,
-            to: email,
             subject: `Thank You for Contacting Me - Rohan Srivastava`,
             html: userAutoReplyTemplate(name, OWNER_NAME)
         };
 
-        await transporter.sendMail(ownerMailOptions);
-        await transporter.sendMail(userMailOptions);
+        await sendEmail(OWNER_EMAIL, ownerMailOptions.subject, ownerMailOptions.html);
+        await sendEmail(email, userMailOptions.subject, userMailOptions.html);
 
         res.json({
             success: true,
