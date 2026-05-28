@@ -46,7 +46,7 @@ https://drive.google.com/file/d/1J34XAGVi2XxOCY4935ERlfHfBLYWiM61/view
 ```
 **REPLACE WITH:**
 ```
-https://drive.google.com/file/d/1Nmpl-o3Zin1Oa8rUtTBXxhKtqokgXs_Y/view?usp=drive_link
+https://drive.google.com/file/d/1sYEj_-M3yBgdTriHP7iKbQYgqrez-tws/view?usp=drive_link
 ```
 
 ---
@@ -396,7 +396,7 @@ All data below is verified from the final resume (v4). Use this as the single so
 - LinkedIn: https://www.linkedin.com/in/rohan3125/
 - GitHub: https://github.com/ROHAN-SRIVASTAVA-GIT
 - LeetCode: https://leetcode.com/codethecoding25/
-- Resume: https://drive.google.com/file/d/1Nmpl-o3Zin1Oa8rUtTBXxhKtqokgXs_Y/view?usp=drive_link
+- Resume: https://drive.google.com/file/d/1sYEj_-M3yBgdTriHP7iKbQYgqrez-tws/view?usp=drive_link
 
 ### Education
 - Degree: Bachelor of Technology — Computer Science and Engineering
