@@ -291,7 +291,7 @@ app.use(express.static(path.join(__dirname), {
     dotfiles: 'ignore',
     setHeaders: (res, filePath) => {
         if (filePath.endsWith('.js') || filePath.endsWith('.css')) {
-            res.setHeader('Cache-Control', 'public, max-age=31536000');
+            res.setHeader('Cache-Control', 'no-cache, must-revalidate');
         }
     }
 }));
