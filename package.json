@@ -7,9 +7,9 @@
     "node": "24.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "build": "echo 'No build needed'"
+    "start": "node --no-deprecation server.js",
+    "dev": "node --no-deprecation server.js",
+    "build": "echo 'Static portfolio - no build step needed'"
   },
   "dependencies": {
     "cors": "^2.8.5",

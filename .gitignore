@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Environment variables - KEEP THIS FILE TRACKED
-# .env
+# Environment variables
+.env
 
 # IDE
 .idea/

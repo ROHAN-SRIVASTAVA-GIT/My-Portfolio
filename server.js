@@ -1,3 +1,5 @@
+process.noDeprecation = true;
+
 require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
@@ -285,10 +287,30 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname), {
+    dotfiles: 'ignore',
+    setHeaders: (res, filePath) => {
+        if (filePath.endsWith('.js') || filePath.endsWith('.css')) {
+            res.setHeader('Cache-Control', 'public, max-age=31536000');
+        }
+    }
+}));
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+app.get('*', (req, res) => {
+    if (!req.path.startsWith('/api/')) {
+        res.sendFile(path.join(__dirname, 'index.html'));
+    }
+});
+
+const PORT = process.env.PORT || 3000;
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+    });
+}
 
 module.exports = app;
