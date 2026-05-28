@@ -392,7 +392,7 @@ All data below is verified from the final resume (v4). Use this as the single so
 - Title: Full Stack Developer | Backend Engineer
 - Email: srivastavarohan3125@gmail.com
 - Phone: +91-7903994736
-- Location: Bhubaneswar, India | Open to Relocation
+- Location: Bengaluru, India | Open to Relocation
 - LinkedIn: https://www.linkedin.com/in/rohan3125/
 - GitHub: https://github.com/ROHAN-SRIVASTAVA-GIT
 - LeetCode: https://leetcode.com/codethecoding25/
@@ -406,7 +406,7 @@ All data below is verified from the final resume (v4). Use this as the single so
 
 ### Experience
 - Employer: Centroxy Solutions Pvt Ltd
-- Location: Bhubaneswar, India
+- Location: Bengaluru, India
 - Duration: Jun 2024 – Present
 - Title: Software Engineer | Client: Deloitte (Software Development Associate)
 - Projects: 4 enterprise projects
